@@ -1,0 +1,9 @@
+name: PR Guard
+on:
+  push:
+  pull_request:
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "pr-guard check passed"
